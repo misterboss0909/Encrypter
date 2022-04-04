@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_prim.css" />
+    <title>Encrypt and Decrypt</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="section encoder">
+        <input
+          class="input"
+          id="ti1"
+          type="password"
+          value="Write text to encrypt"
+        />
+
+        <textarea
+          class="input"
+          name="input"
+          id="ti2"
+          placeholder="Click Encrypt to encrypt your text"
+          cols="25"
+          rows="4"
+        ></textarea>
+        <button class="btn" onClick="encrypt()">Encrypt!</button>
+      </section>
+      <section class="section decoder">
+        <input
+          class="input"
+          id="ti3"
+          type="text"
+          placeholder="Click to copy encrypted text"
+          onclick="addText()"
+        />
+
+        <textarea
+          class="input"
+          name="input"
+          id="ti4"
+          placeholder="click Decrypt to decrypt your text"
+          cols="25"
+          rows="4"
+        ></textarea>
+        <button class="btn" onClick="decrypt()">Decrypt!</button>
+      </section>
+      <section class="section">
+        <button class="btn" onclick="restart()">restart encrypter</button>
+      </section>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
